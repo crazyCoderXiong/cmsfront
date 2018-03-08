@@ -1,0 +1,229 @@
+
+body section{
+	background-color:#222;
+}
+body{
+	background-color:#000;
+}
+body header .container .row{
+	background-color:#000;
+}
+body footer .container .row{
+	background-color:#000;
+}
+body section .container .row{
+	background-color:#222;
+}
+body header{
+	border-bottom:3px solid #999;
+	background-color:#000;
+}
+body footer{
+	border-top:1px solid #bdbdbd;
+	background-color:#000;
+}
+h3{
+	color:#fff;
+}
+.text-titleCont .tab .item h3 a>span{
+	color:#fff;
+}
+/*----------------------------------纯文本模块开始--------------------------------------*/
+@media(max-width:768px){
+	body .model .content-bar>.dropdown.horizontal .dropdown-menu>li.content-bar_click{
+		line-height:36px;
+		border-bottom:none;
+	}
+}
+.model .content-bar .dropdown.horizontal .dropdown-menu>li{
+	margin-top:-1px;
+}
+.model .content-bar .dropdown.horizontal .dropdown-menu>li.content-bar_click{
+	border-bottom:2px solid #fefefe;
+	line-height:53px;
+	margin-top:-1px;
+}
+body .model .content-bar .dropdown-menu li>span{
+	color:#b4b4b4;
+}
+body .pic-pictures{
+	background-color:transparent;
+}
+/*楼层*/
+.layout{
+	background-color:#222;
+}
+.content-bar .iconLeft{
+	width:10px;
+	height:14px;
+	margin-top:18px;
+	background-position: 0 -214px;
+}
+.content-bar .iconArrow{
+	width:22px;
+	height:22px;
+	margin-top:18px;
+	background-position:-212px -42px;
+}
+.model .content-bar .left{
+	font-family:"微软雅黑";
+	color:#fefefe;
+	border-bottom:2px solid #fefefe;
+}
+.content-bar>div>ul>li>span{
+	color:#b4b4b4;
+	margin-top:1px;
+}
+.text-title .text .item:hover .video{
+	 background-position:-147px -67px;
+}
+.text-title .text .item:hover .book{
+	background-position:-147px -112px;
+}
+.item a:hover{
+	color:#01c185;
+	text-decoration: underline;
+}
+.tab .prefix-disc li:hover i{
+	background-color:#01c185;
+}
+li a{
+	font-family: "微软雅黑";
+	border-bottom:1px solid transparent;
+}
+.text-title .tab .prefix-number>li:hover{
+	color:#01c185;
+}
+.text-title .tab .prefix-number>li:hover>a{
+	color:#01c185;
+}
+body .text-titleCont .lists .item h3>a:hover>span{
+	color:#01c185;
+}
+.text-titleCont .lists .item p:hover>a{
+	color:#01c185;
+	text-decoration: underline;
+}
+/*--------------------------------纯文本模块结束-------------------------------------*/
+
+
+
+/*--------------------------------图文混排模块开始--------------------------------*/
+.pictureText-surround .tab .item .title-line>li:hover>a{
+	color: #01c185;
+}
+.pictureText-surround .tab .prefix-number .item .title-line>li:hover{
+	color: #01c185;
+}
+.media-body a:hover{
+	color:#01c185;
+	text-decoration: underline;
+}
+.pic-pictures .picture:hover,.book .picture:hover{
+	border:1px solid #01c185;
+}
+/*--------------------------------图文混排模块结束--------------------------------*/
+
+
+
+/*----------------------------导航模块开始-----------------------------------*/
+
+/*-------------带搜索框的通行导航-----------------*/
+
+.nav-searchBox .search,.nav-classic .search{
+	background-color:#949a98;
+}
+/*-----------------nav-button && nav-classic----------------------*/
+.nav-button .tab>ol>li a{
+	color:#323232;
+}
+.nav-button .tab>ol>li:hover,.nav-classic .tab>ol>li:hover{
+	background-color:#ededed;
+}
+.nav-button .character .vertical-nav li:hover,.nav-classic .character .vertical-nav li:hover{
+	background-color:#ededed;
+}
+.nav-button .character .vertical-nav li:hover a,.nav-classic .character .vertical-nav li:hover a{
+	color:#01c185;
+	text-decoration: none;
+}
+.nav-button .tab>ol>li:hover>a,.nav-classic .tab>ol>li:hover>a{
+	color:#212121;
+	text-decoration: none;
+}
+.nav-button .tab>ol .hover_nav li:hover,.nav-classic .tab>ol .hover_nav li:hover{
+	background:#ededed;
+}
+.nav-button .tab>ol .hover_nav li:hover a,.nav-classic .tab>ol .hover_nav li:hover a{
+	color:#01c185;
+	text-decoration: none;
+}
+
+/*--------------------nav-text------------------*/
+
+.nav-text .tab>ol li:hover a{
+	color:#01c185;
+	text-decoration: underline;
+}
+/*-------nav-classicButton------------*/
+.nav-classicButton .lists{
+	border-bottom:1px solid #01c185;
+}
+.nav-classicButton .lists>li:hover{
+	background-color:#01c185;
+}
+.nav-classicButton .lists>li:hover>a{
+	color:#fff;
+	text-decoration: none;
+}
+.nav-footer .lists>li:hover>a{
+	color:#01c185;
+	text-decoration: underline;
+}
+/*-----------------------------导航模块结束----------------------------------*/
+.pic-slide .tab .rolling-style.thumbnailLists li:nth-child(1) img{
+	border:2px solid #01c185;
+}
+.pic-slide .rolling-style.iconLists li:nth-child(1){
+	background-color:#01c185;
+}
+.pic-slide .rolling-style.lineLists li:nth-child(1){
+	background-color:#01c185;
+}
+/*----固定页分页----*/
+.pagination>li>a:hover{
+	background-color:#01c185!important;
+	border:1px solid #01c185!important;
+	color:#fff;
+}
+/*图书详情页*/
+.book-introduce .tab .lists>li:hover a{
+	color:#01c185;
+	text-decoration: none;
+}
+.pageTurning>li:hover{
+	color:#01c185;
+	text-decoration: none;
+}
+/*侧栏模块*/
+.model.sidebar.hasBg .lists .item .text{
+	background-color:#01c185;
+}
+body .model.sidebar.hasBg .tab .lists .item:hover,body .model.sidebar.hasBg .tab .lists .item.contact-us li:hover{
+	border-radius:0;
+	background-color:#01c185;
+}
+/*新增导航模块*/
+.model.newNav .tab .lists .item:hover>a{
+	color:#01c185;
+	text-decoration:none;
+}
+.model.newNav .tab .lists .second-nav li:hover>a,.model.newNav .tab .lists .second-nav-vertical li:hover>a{
+	text-decoration:none;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover{
+	background-color:#01c185;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover>a{
+	color:#fff;
+}

@@ -1,0 +1,216 @@
+body{
+	background-image:url(../images/beijing.png);
+	background-repeat: no-repeat;
+}
+header{
+	border-bottom:3px solid #03A9F4;
+}
+footer{
+	border-top:1px solid #03A9F4;
+	background-color:#fafafa;
+}
+/*----------------------------------纯文本模块开始--------------------------------------*/
+@media(max-width:768px){
+	body .model .content-bar>.dropdown.horizontal .dropdown-menu>li.content-bar_click{
+		line-height:36px;
+		border-bottom:none;
+	}
+}
+.model .content-bar>.dropdown.horizontal .dropdown-menu>li.content-bar_click{
+	border-bottom:2px solid #03a9f4;
+	line-height:53px;
+}
+.model .content-bar .dropdown.open .dropdown-menu>li.content-bar_click{
+	line-height:36px;
+	margin-top:0;
+}
+/*楼层*/
+.model .content-bar .left{
+	font-family:"微软雅黑";
+	color:#03A9F4;
+	border-bottom:2px solid #03a9f4;
+	margin-top:1px;
+	line-height:53px;
+}
+.item a:hover{
+	color:#03a9f4;
+	text-decoration: underline;
+}
+.text-title .tab .prefix-number>li:hover{
+	 color:#03a9f4;
+ }
+.text-title .tab .prefix-number .item:hover>a{
+	color:#03a9f4;
+}
+.text-title .item:hover .video{
+	background-position:-147px -22px;
+}
+.text-title .item:hover .book{
+	background-position:-147px -162px;
+}
+.content-bar_click{
+	color:#03A9F4;
+	border-bottom:2px solid #06AAF4
+}
+.content-bar .iconLeft{
+	width:10px;
+	height:14px;
+	margin-top:22px;
+	background-position: 0 -214px;
+}
+.content-bar .iconArrow{
+	width:22px;
+	height:22px;
+	margin-top:18px;
+	background-position: -212px -42px;
+}
+.tab .prefix-disc li a:hover i{
+	background-color:#03a9f4;
+}
+body .text-titleCont .lists .item h3>a:hover>span{
+	color:#03a9f4;
+}
+.text-titleCont .lists .item p:hover>a{
+	color:#03a9f4;
+	text-decoration: underline;
+}
+/*--------------------------------纯文本模块结束-------------------------------------*/
+
+
+
+/*!*--------------------------------图文混排模块开始--------------------------------*!*/
+
+.pictureText-surround .item .title-line li:hover>a{
+	color: #03A9F4;
+}
+.pictureText-surround .prefix-number .item .title-line li:hover{
+	color: #03A9F4;
+}
+.media-body a:hover{
+	color:#03A9F4;
+	text-decoration: underline;
+}
+.pic-pictures .picture:hover,.pic-pictures .picture:hover{
+	border:1px solid #03A9F4;
+}
+/*----------------------------图文混排模块结束-------------------------------*/
+
+
+/*----------------------------导航模块开始-----------------------------------*/
+
+/*-------------带搜索框的通行导航-----------------*/
+.nav-searchBox .search,.nav-classic .search{
+	background-color:#03a9f4;
+}
+@media(max-width:768px){
+	body .model.nav-button .tab-nav .dropdown-menu .item{
+		width:100%;
+		line-height:54px;
+		height:54px;
+	}
+	body .model.nav-button .dropdown.open .dropdown-menu .item:hover{
+		background-color:#03a9f4;
+		color:#fff;
+	}
+}
+/*-----------------nav-button && nav-classic----------------------*/
+.nav-button .tab>ol>li:hover,.nav-classic .tab>ol>li:hover{
+	background-color:#03a9f4;
+}
+.nav-button .character .vertical-nav>li:hover,.nav-classic .character .vertical-nav>li:hover{
+	background-color:#ededed;
+}
+
+.nav-button .tab>ol .character .vertical-nav>li:hover>a,
+.nav-classic .tab>ol .character .vertical-nav>li:hover>a{
+	color:#03a9f4;
+	text-decoration: none;
+}
+.nav-button .tab>ol>li:hover>a,.nav-classic .tab>ol>li:hover>a{
+	color:#fff;
+	text-decoration: none;
+}
+.nav-button .tab>ol .hover_nav li:hover,.nav-classic .tab>ol .hover_nav li:hover{
+	background-color:#ededed;
+}
+.nav-button .tab>ol .hover_nav li:hover a,.nav-classic .tab>ol .hover_nav li:hover a{
+	color:#03a9f4;
+	text-decoration: none;
+}
+/*-------nav-classicButton-------------*/
+
+.nav-classicButton .lists{
+	border-bottom:1px solid #03a9f4;
+}
+.nav-classicButton .lists>li:hover{
+	background-color:#03a9f4;
+}
+.nav-classicButton .lists>li:hover>a{
+	color:#fff;
+	text-decoration: none;
+}
+/*---------nav-text-------------*/
+.nav-text .tab>ol>li:hover>a{
+	color:#03a9f4;
+	text-decoration: underline;
+}
+.nav-footer .item a:hover{
+	color:#03a9f4;
+	text-decoration: underline;
+}
+/*-----------------------------导航模块结束----------------------------------*/
+.pic-slide .tab .rolling-style.thumbnailLists li:nth-child(1) img{
+	border:2px solid #03A9F4;
+}
+.pic-slide .rolling-style.iconLists li:nth-child(1){
+	background-color:#03A9F4;
+}
+.pic-slide .rolling-style.lineLists li:nth-child(1){
+	background-color:#03A9F4;
+}
+/*----固定页分页----*/
+.pagination>li>a:hover{
+	background-color:#03A9F4!important;
+	border:1px solid #03A9F4!important;
+	color:#fff;
+}
+/*图书详情页*/
+.book-introduce .tab .lists>li:hover a{
+	color:#03A9F4;
+	text-decoration: none;
+}
+/*图书详情页*/
+.book-introduce .tab .lists>li:hover a{
+	color:#03A9F4;
+	text-decoration: none;
+}
+.pageTurning>li:hover{
+	color:#03A9F4;
+	text-decoration: none;
+}
+/*新增图文混排*/
+.model.newPicText .lists .media-body .media-body-wrap-right a:hover{
+	color:#03a9f4;
+}
+/*侧栏模块*/
+.model.sidebar.hasBg .lists .item .text{
+	background-color:#03a9f4;
+}
+body .model.sidebar.hasBg .tab .lists .item:hover,body .model.sidebar.hasBg .tab .lists .item.contact-us li:hover{
+	border-radius:0;
+	background-color:#03a9f4;
+}
+/*新增导航模块*/
+.model.newNav .tab .lists .item:hover>a{
+	color:#03a9f4;
+	text-decoration:none;
+}
+.model.newNav .tab .lists .second-nav li:hover>a,.model.newNav .tab .lists .second-nav-vertical li:hover>a{
+	text-decoration:none;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover{
+	background-color:#03a9f4;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover>a{
+	color:#fff;
+}

@@ -1,0 +1,3732 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="" />
+		<title></title>
+		<!--整合的css文件-->
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<!--公用文件-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!--模块文件-->
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/blue.css" class="theme" />
+		<!--拖拽文件-->
+		<link rel="stylesheet" href="css/aibws.css" />
+		<!-- 警告提示框 -->
+		<link rel="stylesheet" href="css/errorTip.css" />
+		<!-- 判断选择框 -->
+		<link rel="stylesheet" href="css/confirmFrame.css" />
+		<link rel="stylesheet" type="text/css" href="css/zTreeStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/assortManger.css" />
+		<link rel="stylesheet" type="text/css" href="css/tagManger.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/media-box.css" />
+		<!-- 取色器 -->
+		<link rel="stylesheet" type="text/css" href="css/colpick.css" />
+		<!-- 音频 -->
+		<link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+		 {#<script src="js/index_min.js"></script>#}
+		<!-- 取色器 -->
+		<script src="js/colpick.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/initPage.js"></script>
+		<script src="js/ztree/jquery.ztree.core.min.js"></script>
+		<script src="js/ztree/jquery.ztree.excheck.min.js"></script>
+		<script src="js/ztree/jquery.ztree.exedit.js"></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+		<script src="js/assortManger.js"></script>
+		<script src="js/tagManger.js"></script>
+		<!-- 视频播放器 -->
+		<script src="jw12/jwplayer.js"></script>
+	</head>
+
+	<body class="clearfix">
+		<div id="container">
+			<!--头部-->
+			<div id="header" class="clearfix">
+				<div class="logo"></div>
+				<div class="login">
+					<div id="companyFullName"></div>
+					<div class="icon2" id="admin">
+						<div class="list" style="display: none;">
+							<div class="list-item" id="modefiyPassword">修改密码</div>
+							<div class="list-item list-item3" id="backLogin">退出</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--主体-->
+			<div id="main" class="clearfix">
+				<div class="left">
+					<ul id="nav-ul">
+						<li id="web" data-id="web">
+							<div class="header">网页设计<span class="click-arrow-icon"></span></div>
+							<div class="content aibws-content" style="display: block;">
+								<div class="modelBox">
+									<ul class="dropdown-module setLayout">
+										<li class="slide-toggle active"><s></s>布局设置<i></i></li>
+										<li class="module-menu">
+											<div class="row-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box row-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="container-width">
+															<span>布局宽度:</span>
+															<label for="">
+																<small></small>
+																<input type="radio" value="adaptive"/>自适应
+																<s>最小宽度:</s><input type="text"/>px
+															</label>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" value="limit"/>限定宽
+																<s>限定宽度:</s><input type="text" value="1000"/>px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择" /><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">1栏</span>
+												<div class="view">
+													<div class="row">
+														<div class="column col-md-12"></div>
+													</div>
+												</div>
+											</div>
+											<div class="row-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box row-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="container-width">
+															<span>布局宽度:</span>
+															<label for="">
+																<small></small>
+																<input type="radio" value="adaptive"/>自适应
+																<s>最小宽度:</s><input type="text"/>px
+															</label>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" value="limit"/>限定宽
+																<s>限定宽度:</s><input type="text" value="1000"/>px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">6:6栏</span>
+												<div class="view">
+													<div class="row">
+														<div class="column col-md-6"></div>
+														<div class="column col-md-6"></div>
+													</div>
+												</div>
+											</div>
+											<div class="row-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box row-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="container-width">
+															<span>布局宽度:</span>
+															<label for="">
+																<small></small>
+																<input type="radio" value="adaptive"/>自适应
+																<s>最小宽度:</s><input type="text"/>px
+															</label>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" value="limit"/>限定宽
+																<s>限定宽度:</s><input type="text" value="1000"/>px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">4:4:4分栏</span>
+												<div class="view">
+													<div class="row">
+														<div class="column col-md-4"></div>
+														<div class="column col-md-4"></div>
+														<div class="column col-md-4"></div>
+													</div>
+												</div>
+											</div>
+											<div class="custom">
+												<input type="text" placeholder="自定义布局比例" />
+											</div>
+										</li>
+									</ul>
+									<ul class="dropdown-module textList-module">
+										<li class="slide-toggle"><s></s>纯文字列表模块<i></i></li>
+										<li class="module-menu">
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">纯标题</span>
+												<div class="view">
+													<ul class="model text-title">
+														<li class="content-bar title clearfix">
+															<ul class="clearfix">
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">标题内容</span>
+												<div class="view">
+													<ul class="model text-titleCont">
+														<li class="content-bar title">
+															<ul>
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="li tab active clearfix"></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="dropdown-module image-module">
+										<li class="slide-toggle"><s></s>纯图片显示模块<i></i></li>
+										<li class="module-menu">
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">幻灯片</span>
+												<div class="view">
+													<ul class="model pic-slide">
+														<li class="tab active full no-action to-details current-page" style="height:334px;">
+															<div class="item">
+																<ul class="pictureSlide">
+																	<li class="picture" data-number="1" style="height:334px;">
+																		<a href="javascript:;"><img src="images/air_03.jpg" alt="南海西沙风景如此美丽" class="jqthumb"></a>
+																		<div class="mod">
+																			<h3><a href="javascript:;" title="南海西沙风景如此美丽">南海西沙风景如此美丽</a></h3>
+																		</div>
+																	</li>
+																</ul>
+																<ul class="arrows">
+																	<li class="left-arrow"> &lt; </li>
+																	<li class="right-arrow"> &gt; </li>
+																</ul>
+																<ul class="rolling-style iconLists">
+																	<li data-number="1"></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">多图</span>
+												<div class="view">
+													<ul class="model pic-pictures">
+														<li class="title content-bar clearfix">
+															<ul class="clearfix">
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab clearfix active full no-action to-details current-page"></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="dropdown-module picTet-module">
+										<li class="slide-toggle"><s></s>图文混合模块<i></i></li>
+										<li class="module-menu">
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">环绕</span>
+												<div class="view">
+													<ul class="model pictureText-surround">
+														<li class="title content-bar">
+															<ul>
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix full no-action current-page"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">横排</span>
+												<div class="view">
+													<ul class="model pictureText-crosswise">
+														<li class="title content-bar clearfix">
+															<ul>
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix full no-action current-page"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>&#12288;外&ensp;边&ensp;距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">竖排</span>
+												<div class="view">
+													<ul class="model pictureText-vertical">
+														<li class="title content-bar">
+															<ul>
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix full no-action current-page"></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="dropdown-module navbar-module">
+										<li class="slide-toggle"><s></s>导航条模块<i></i></li>
+										<li class="module-menu">
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">企业经典导航条</span>
+												<div class="view">
+													<ul class="model nav-classic">
+														<li class="tab tab-nav clearfix active">
+															<ol class="lists clearfix pull-left">
+																<i class="handleLabel"></i>
+																<li class="item">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+															</ol>
+															<form class="clearfix pull-left">
+																<input placeholder="搜索..." type="text">
+																<div class="search"></div>
+															</form>
+															<ol class="lists pull-right clearfix">
+																<i class="handleLabel"></i>
+																<li class="item">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="item-row">
+															<span>行数:</span>
+															<label>
+																<input type="text" value="1">
+																<span>1-3行(默认1行)</span>
+															</label>
+														</form>
+														<form class="alignment">
+															<span>对齐方式:</span>
+															<label class="">
+																<small></small>
+																<input type="radio" name="alignment" value="text-left">
+																<i class="glyphicon glyphicon-align-left"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-center">
+																<i class="glyphicon glyphicon-align-center"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-right">
+																<i class="glyphicon glyphicon-align-right"></i>
+															</label>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="alignment" value="full">
+																<span>充满</span>
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">按钮导航条</span>
+												<div class="view">
+													<ul class="model nav-button">
+														<li class="tab tab-nav active clearfix full">
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="item-row">
+															<span>行数:</span>
+															<label>
+																<input type="text" value="1">
+																<span>1-3行(默认1行)</span>
+															</label>
+														</form>
+														<form class="alignment">
+															<span>对齐方式:</span>
+															<label class="">
+																<small></small>
+																<input type="radio" name="alignment" value="text-left">
+																<i class="glyphicon glyphicon-align-left"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-center">
+																<i class="glyphicon glyphicon-align-center"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-right">
+																<i class="glyphicon glyphicon-align-right"></i>
+															</label>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="alignment" value="full">
+																<span>充满</span>
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">经典按钮导航条</span>
+												<div class="view">
+													<ul class="model nav-classicButton">
+														<li class="tab active tab-nav clearfix full">
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:12.5%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="item-row">
+															<span>行数:</span>
+															<label>
+																<input type="text" value="1">
+																<span>1-3行(默认1行)</span>
+															</label>
+														</form>
+														<form class="alignment">
+															<span>对齐方式:</span>
+															<label class="">
+																<small></small>
+																<input type="radio" name="alignment" value="text-left">
+																<i class="glyphicon glyphicon-align-left"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-center">
+																<i class="glyphicon glyphicon-align-center"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-right">
+																<i class="glyphicon glyphicon-align-right"></i>
+															</label>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="alignment" value="full">
+																<span>充满</span>
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">纯文字导航条</span>
+												<div class="view">
+													<ul class="model nav-text">
+														<li class="tab tab-nav active clearfix full">
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item" style="width:33.3%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:33.3%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+																<li class="item" style="width:33.3%;">
+																	<a href="javascript:;">添加页签名</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">搜索导航条</span>
+												<div class="view">
+													<ul class="model nav-searchBox">
+														<li class="tab tab-nav clearfix active">
+															<form>
+																<input type="text" placeholder="搜索..">
+																<div class="search"></div>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>样式配置</span>
+														</div>
+														<form class="item-row">
+															<span>行数:</span>
+															<label>
+																<input type="text" value="3">
+																<span>3-6行(默认3行)</span>
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+												</div>
+												<span class="draggable-title">页脚导航条</span>
+												<div class="view">
+													<ul class="model nav-footer">
+														<li class="tab tab-nav active clearfix text-center">
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+															</ol>
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+															</ol>
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+																<li class="item">
+																	<a href="javascript:;">添加内容</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">访客记录</span>
+												<div class="view">
+													<ul class="model nav-visitcount">
+														<li class="tab active tab-nav text-center clearfix">
+															<ol class="lists clearfix">
+																<li class="item">
+																	您是第
+																	<span class="red">
+																		<span id="visit-count">n</span>
+																	</span>
+																	位访客
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="border-display">
+															<span>边框设置:</span>
+															<label>
+																<small></small>
+																<input type="radio" name="border-display" value="has">是
+															</label>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="border-display" value='no'>否
+															</label>
+														</form>
+														<form class="border-color disabled">
+															<span>边框颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="border-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="border-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="border-width disabled">
+															<span>边框宽度:</span>
+															<label>
+																<input type="text" name="border-width" value="1">px
+															</label>
+														</form>
+														<form class="border-style disabled">
+															<span>边框样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="border-style" value="solid">
+																<i class="border-solid"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="border-style" value='dashed'>
+																<i class="border-dashed"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="border-style" value='dotted'>
+																<i class="border-dotted"></i>
+															</label>
+														</form>
+														<form class="button-width">
+															<span>按钮宽度:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="button-width" value="average">均分等宽
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="button-width" value='adaptive'>自适应
+															</label>
+														</form>
+														<form class="alignment">
+															<span>水平对齐方式:</span>
+															<label class="">
+																<small></small>
+																<input type="radio" name="alignment" value="text-left">
+																<i class="glyphicon glyphicon-align-left"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-center">
+																<i class="glyphicon glyphicon-align-center"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-right">
+																<i class="glyphicon glyphicon-align-right"></i>
+															</label>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="alignment" value="full">
+																<span>充满</span>
+															</label>
+														</form>
+														<form class="vertical-alignment">
+															<span>垂直对齐方式:</span>
+															<label  class="checked">
+																<small></small>
+																<input type="radio" name="vertical-alignment" value="top">
+																上对齐
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="vertical-alignment" value="middle">
+																居中
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="vertical-alignment" value="bottom">
+																下对齐
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">自定义导航条</span>
+												<div class="view">
+													<ul class="model newNav">
+														<li class="tab active">
+															<ol class="lists clearfix">
+																<i class="handleLabel"></i>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+																<li class="item" style="width: 12.5%;">
+																	<a href="javascript:;">添加标签名</a>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul class="dropdown-module madia-module">
+										<li class="slide-toggle"><s></s>媒体模块<i></i></li>
+										<li class="module-menu">
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">文件下载</span>
+												<div class="view">
+													<ul class="model file-download">
+														<li class="content-bar title clearfix">
+															<ul class="clearfix pull-left">
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">音频</span>
+												<div class="view">
+													<ul class="model music">
+														<li class="content-bar title clearfix">
+															<ul class="clearfix pull-left">
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="template-config handleLabel handle-btn config-btn"></span>
+													<div class="template-config-box config-box">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="tabs-display">
+															<span>选项卡设置:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-display" value="block"/>显示选项卡
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-display" value="none"/>不显示选项卡
+															</label>
+														</form>
+														<form class="tabs-style">
+															<span>选项卡样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-style" value="horizontal"/>横排
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-position" value="dropdown"/>下拉菜单
+															</label>
+														</form>
+														<form class="tabs-center">
+															<span>选项卡居中:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="tabs-center" value="no"/>否
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="tabs-center" value="text-center"/>是
+															</label>
+														</form>
+														<form class="more-style">
+															<span>&#12288;更多样式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="more-style" value="more-text"/>更多
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconLeft"/>&gt;
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="iconArrow"/><i></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="more-style" value="none">无
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">视频</span>
+												<div class="view">
+													<ul class="model video-playing">
+														<li class="content-bar title clearfix">
+															<ul class="clearfix pull-left">
+																<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+															</ul>
+															<i class="handleLabel"></i>
+															<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+														</li>
+														<li class="tab active clearfix"></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="content-id">
+															<span>内容id:</span>
+															<label>
+																<input type="text" name="content-id">
+															</label>
+														</form>
+														<form class="alignment">
+															<span>对齐方式:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="alignment" value="text-left">
+																<i class="glyphicon glyphicon-align-left"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-center">
+																<i class="glyphicon glyphicon-align-center"></i>
+															</label>
+															<label>
+																<small></small>
+																<input type="radio" name="alignment" value="text-right">
+																<i class="glyphicon glyphicon-align-right"></i>
+															</label>
+														</form>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">献烛</span>
+												<div class="view">
+													<ul class="model offer-candle">
+														<li class="tab active text-left clearfix">
+															<ol class="lists clearfix">
+																<li class="item clearfix">
+															        <span class="pull-left">献烛：</span>
+															        <ul class="pull-left">
+													                    <li><img src="images/fire3.gif"></li>
+													                    <li><img src="images/fire3.gif"></li>
+													                    <li><img src="images/fire3.gif"></li>
+													                    <li><img src="images/fire3.gif"></li>
+													                    <li><img src="images/fire3.gif"></li>
+													                    <li><img src="images/copy6.png"></li>
+													                    <li><img src="images/copy6.png"></li>
+													                    <li><img src="images/copy6.png"></li>
+													                    <li><img src="images/copy6.png"></li>
+													                    <li><img src="images/copy6.png"></li>
+															        </ul>
+															        <p class="pull-left"><span>献烛</span><b>5</b></p>
+															    </li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-draggable ui-draggable">
+												<div class="pull-right template-handle">
+													<div class="delete handle-btn">
+														<a href="#delete" class="delete-btn handleLabel"></a>
+														<div class="prompt">删除</div>
+													</div>
+													<span class="drag handleLabel handle-btn"></span>
+													<span class="content-config handleLabel config-btn"></span>
+													<div class="config-box content-config-box" style="display: none;">
+														<em>&#9670;</em>
+														<span>&#9670;</span>
+														<div class="box-top">
+															<span>模板配置</span>
+														</div>
+														<form class="margin-distance">
+															<span>外边距:</span>
+															<label>
+																<input type="text" name="margin-distance" value="5">px
+															</label>
+														</form>
+														<form class="background-color">
+															<span>背景颜色:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-color" value="no">无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-color" value='has'>
+																<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+															</label>
+														</form>
+														<form class="background-image">
+															<span>背景图片:</span>
+															<label class="checked">
+																<small></small>
+																<input type="radio" name="background-image" value='no'>无
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-image" value='has'>
+																<div></div>
+																<em>选择</em>
+															</label>
+														</form>
+														<form class="background-repeat disabled">
+															<span>背景平铺:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-repeat" value="repeat"/>平铺
+															</label>
+														</form>
+														<form class="background-size disabled">
+															<span>背景填充:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-size" value="cover"/>全充满
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-size" value="contain"/>自适应
+															</label>
+														</form>
+														<form class="background-position disabled">
+															<span>背景位置:</span>
+															<label for="" class="checked">
+																<small></small>
+																<input type="radio" name="background-position" value="left top"/>居左
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="center top"/>居中
+															</label>
+															<label for="">
+																<small></small>
+																<input type="radio" name="background-position" value="right top"/>居右
+															</label>
+														</form>
+													</div>
+												</div>
+												<span class="draggable-title">时间轴</span>
+												<div class="view">
+													<ul class="model timer-axis">
+														<li class="tab time-horizontal active">
+															<ol class="lists cont2" data-timeStyle="<span class=&quot;month-day&quot;>%M-%d</span><span class=&quot;year&quot;>%Y</span>">
+																<li class="item">
+																	<div class="time-point clearfix">
+																		<div class="time-left clearfix">
+																			<div class="date">
+																				<span class="month-day">04-18</span>
+																				<span class="year">2017</span>
+																			</div>
+																			<p class="time-line">
+																				<span class="circle"><img src="images/Group20.png" alt=""></span>
+																				<span class="vertical-line"></span>
+																			</p>
+																		</div>
+																		<div class="time-right">
+																			<h3>商业摄影</h3>
+																			<p><span>商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影</span><b>...</b></p>
+																		</div>
+																	</div>
+																</li>
+																<li class="item">
+																	<div class="time-point clearfix">
+																		<div class="time-left clearfix">
+																			<div class="date">
+																				<span class="month-day">04-18</span>
+																				<span class="year">2017</span>
+																			</div>
+																			<p class="time-line">
+																				<span class="circle"><img src="images/Group20.png" alt=""></span>
+																				<span class="vertical-line"></span>
+																			</p>
+																		</div>
+																		<div class="time-right">
+																			<h3>商业摄影2</h3>
+																			<p><span>商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影</span><b>...</b></p>
+																		</div>
+																	</div>
+																</li>
+																<li class="item">
+																	<div class="time-point clearfix">
+																		<div class="time-left clearfix">
+																			<div class="date">
+																				<span class="month-day">04-18</span>
+																				<span class="year">2017</span>
+																			</div>
+																			<p class="time-line">
+																				<span class="circle"><img src="images/Group20.png" alt=""></span>
+																				<span class="vertical-line"></span>
+																			</p>
+																		</div>
+																		<div class="time-right">
+																			<h3>商业摄影3</h3>
+																			<p><span>商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影</span><b>...</b></p>
+																		</div>
+																	</div>
+																</li>
+																<li class="item">
+																	<div class="time-point clearfix">
+																		<div class="time-left clearfix">
+																			<div class="date">
+																				<span class="month-day">04-18</span>
+																				<span class="year">2017</span>
+																			</div>
+																			<p class="time-line">
+																				<span class="circle"><img src="images/Group20.png" alt=""></span>
+																				<span class="vertical-line"></span>
+																			</p>
+																		</div>
+																		<div class="time-right">
+																			<h3>商业摄影4</h3>
+																			<p><span>商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影商业摄影</span><b>...</b></p>
+																		</div>
+																	</div>
+																</li>
+															</ol>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li data-id="tag">
+							<div class="header">分类标签</div>
+						</li>
+						<li data-id="contentInput" id="contentInput">
+							<div class="header">内容录入<span class="arrow-icon"></span></div>
+							<div class="content">
+								<div id="article">文章</div>
+								<div id="gallery">画廊</div>
+								<div id="vedio">视频</div>
+								<div id="music">音乐</div>
+								<div id="topic">专题</div>
+								<div id="bookessay">图书杂志</div>
+								<div id="playreport">直播频道</div>
+							</div>
+						</li>
+						<li id="media-center" data-id="media">
+							<div class="header">媒资中心<span class="arrow-icon"></span></div>
+							<div class="content">
+								<div id="media-pic">图片</div>
+								<div id="media-video">视频</div>
+								<div id="media-music">音乐</div>
+								<div id="media-file">附件</div>
+							</div>
+						</li>
+						<li id="maneger-center" data-id="management">
+							<div class="header">管理中心<span class="arrow-icon"></span></div>
+							<div class="content">
+								<div id="manage-user">注册用户管理</div>
+								<div id="manage-comment">评论管理</div>
+								<div id="manage-manager">管理员管理</div>
+								<div id="manage-system">系统设置</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="right">
+					<div id="r-content">
+						<div class="navbar">
+							<div class="navbar-header" style="display: none;">
+								<img src="images/index-logo.png" />
+							</div>
+							<ul class="navbar-right clearfix">
+								<li class="upload" style="display:none">
+									<a href="javascript:;">发布</a>
+								</li>
+								<li class="userName"></li>
+								<!--<li class="cms">
+									<a class="btn btn-blue" href="/login">网站内容录入</a>
+								</li>-->
+								<li class="language">
+									<span class="btn btn-blue">简体中文</span>
+									<ul class="language-menu dropdown-box">
+										<!-- <li class="active-bg">简体中文</li>
+										<li class="">繁体中文</li>
+										<li class="">英文</li> -->
+									</ul>
+								</li>
+								<li class="theme">
+									<span class="btn btn-blue">页面颜色</span>
+									<div class="theme-change">
+										<div class="box-top clearfix">
+											<div class="box-title pull-left">
+												<i></i>
+												<span>更改主题</span>
+											</div>
+											<a href="javascript:;" class="box-close pull-right"><i></i></a>
+										</div>
+										<div class="change-box clearfix">
+											<div class="theme-blue active">
+												<div class="color-box"></div>
+												<span class="theme-title">默认天空蓝</span>
+												<div class="theme-selected"></div>
+											</div>
+											<div class="theme-white">
+												<div class="color-box"></div>
+												<span class="theme-title">雪花白</span>
+												<div class="theme-selected"></div>
+											</div>
+											<div class="theme-green">
+												<div class="color-box"></div>
+												<span class="theme-title">苹果绿</span>
+												<div class="theme-selected"></div>
+											</div>
+											<div class="theme-red">
+												<div class="color-box"></div>
+												<span class="theme-title">玫瑰红</span>
+												<div class="theme-selected"></div>
+											</div>
+											<div class="theme-black">
+												<div class="color-box"></div>
+												<span class="theme-title">子夜黑</span>
+												<div class="theme-selected"></div>
+											</div>
+										</div>
+									</div>
+									<div class="change-boxMask"></div>
+								</li>
+								<li class="preview">
+									<span class="btn btn-blue">随时预览</span>
+								</li>
+								<li class="menu">
+									<span class="btn btn-blue">新页面列表</span>
+									<ul class="page-menu dropdown-box"></ul>
+								</li>
+								<!-- <li class="exit">
+									<a class="btn btn-blue" href="/logout">退出</a>
+								</li> -->
+							</ul>
+						</div>
+						<div class="demo">
+							<div class="preset">
+								<div class="page-upload">
+									<a class="btn btn-blue" href="javascript:;">保存页面</a>
+								</div>
+								<div class="header-footer-replace">
+									<span class="btn btn-blue">替换页眉页脚</span>
+									<ul></ul>
+								</div>
+								<label>页面名称:</label>
+								<input type="text" class="page-name" />
+								<label>标题:</label>
+								<input type="text" class="preset-title" />
+								<label>关键字:</label>
+								<input type="text" class="preset-keywords" />
+								<input type="text" class="preset-keywords" />
+								<input type="text" class="preset-keywords" />
+								<input type="text" class="preset-keywords" />
+								<input type="text" class="preset-keywords" />
+							</div>
+							<header>
+								<div class="row-container">
+									<div class="container-config-handel">
+										<span class="container-config handleLabel"></span>
+										<div class="config-box container-config-box">
+											<em>&#9670;</em>
+											<span>&#9670;</span>
+											<div class="box-top"><span>头部样式配置</span></div>
+											<form class="background-color">
+												<span>背景颜色:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-color" value="no">无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-color" value='has'>
+													<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+												</label>
+											</form>
+											<form class="background-image">
+												<span>背景图片:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-image" value='no'>无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-image" value='has'>
+													<div></div>
+													<em>选择</em>
+												</label>
+											</form>
+											<form class="background-repeat disabled">
+												<span>背景平铺:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-repeat" value="repeat"/>平铺
+												</label>
+											</form>
+											<form class="background-size disabled">
+												<span>背景填充:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-size" value="cover"/>全充满
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-size" value="contain"/>自适应
+												</label>
+											</form>
+											<form class="background-position disabled">
+												<span>背景位置:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-position" value="left top"/>居左
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="center top"/>居中
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="right top"/>居右
+												</label>
+											</form>
+										</div>
+									</div>
+									<div class="container-box">
+										<div class="prompt-text">拖放布局添加到头部内容区域</div>
+									</div>
+								</div>
+							</header>
+							<section>
+								<div class="row-container">
+									<div class="container-config-handel">
+										<span class="container-config handleLabel"></span>
+										<div class="config-box container-config-box">
+											<em>&#9670;</em>
+											<span>&#9670;</span>
+											<div class="box-top"><span>主体样式配置</span></div>
+											<form class="background-color">
+												<span>背景颜色:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-color" value="no">无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-color" value='has'>
+													<input type="text" class="picker" readonly placeholder="点击选择"/><p class="showbox"></p>
+												</label>
+											</form>
+											<form class="background-image">
+												<span>背景图片:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-image" value='no'>无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-image" value='has'>
+													<div></div>
+													<em>选择</em>
+												</label>
+											</form>
+											<form class="background-repeat disabled">
+												<span>背景平铺:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-repeat" value="repeat"/>平铺
+												</label>
+											</form>
+											<form class="background-size disabled">
+												<span>背景填充:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-size" value="cover"/>全充满
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-size" value="contain"/>自适应
+												</label>
+											</form>
+											<form class="background-position disabled">
+												<span>背景位置:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-position" value="left top"/>居左
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="center top"/>居中
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="right top"/>居右
+												</label>
+											</form>
+										</div>
+									</div>
+									<div class="container-box">
+										<div class="prompt-text">拖放布局添加到主体内容区域</div>
+									</div>
+								</div>
+							</section>
+							<footer>
+								<div class="row-container">
+									<div class="container-config-handel">
+										<span class="container-config handleLabel"></span>
+										<div class="config-box container-config-box">
+											<em>&#9670;</em>
+											<span>&#9670;</span>
+											<div class="box-top"><span>底部样式配置</span></div>
+											<form class="background-color">
+												<span>背景颜色:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-color" value="no">无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-color" value='has'>
+													<input type="text" class="picker" readonly placeholder="点击选择" /><p class="showbox"></p>
+												</label>
+											</form>
+											<form class="background-image">
+												<span>背景图片:</span>
+												<label class="checked">
+													<small></small>
+													<input type="radio" name="background-image" value='no'>无
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-image" value='has'>
+													<div></div>
+													<em>选择</em>
+												</label>
+											</form>
+											<form class="background-repeat disabled">
+												<span>背景平铺:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-repeat" value="no-repeat"/>不平铺
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-repeat" value="repeat"/>平铺
+												</label>
+											</form>
+											<form class="background-size disabled">
+												<span>背景填充:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-size" value="cover"/>全充满
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-size" value="contain"/>自适应
+												</label>
+											</form>
+											<form class="background-position disabled">
+												<span>背景位置:</span>
+												<label for="" class="checked">
+													<small></small>
+													<input type="radio" name="background-position" value="left top"/>居左
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="center top"/>居中
+												</label>
+												<label for="">
+													<small></small>
+													<input type="radio" name="background-position" value="right top"/>居右
+												</label>
+											</form>
+										</div>
+									</div>
+									<div class="container-box">
+										<div class="prompt-text">拖放布局添加到底部内容区域</div>
+									</div>
+								</div>
+							</footer>
+							<div class="handle-mask"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!--遮罩-->
+		<div class="mark" id="mark" style="position:fixed;top:0;left:0;bottom:0;right:0;background-color: #000;opacity: .6;display: none;z-index: 10001;"></div>
+		<div id="modifiy-psw" class="modifiy-psw" style="display: none;">
+			<h1>修改密码</h1>
+			<div class="list">
+				<div>
+					<label>请输入您的旧密码<span>*</span></label>
+					<input type="password" class="form-box" id="oldpsw">
+				</div>
+				<div>
+					<label>请输入您的新密码<span>*</span></label>
+					<input type="password" class="form-box" id="newpswone">
+				</div>
+				<div>
+					<label>请再次输入您的新密码<span>*</span></label>
+					<input type="password" class="form-box" id="newpswtwo">
+				</div>
+			</div>
+			<div id="modifyPswSubmit" class="btn btn1">提交</div>
+			<div id="modifyPswCancel" class="btn btn2">取消</div>
+		</div>
+		<div id="company" class="companyBox" style="display: none;">
+			<h1>请完善公司信息</h1>
+			<div>
+				<label for="">公司全称</label><input type="text" placeholder="请输入公司全称" id="companyFull" />
+			</div>
+			<div>
+				<label for="">公司简称</label><input type="text" placeholder="请输入公司简称" id="companyShort" />
+			</div>
+			<div class="save">保存</div>
+		</div>
+		<div id="media-box" style="display: none;">
+			<div class="top clearfix">
+				<div class="top-title">
+					媒资中心-图片
+				</div>
+			</div>
+			<div class="bottom clearfix">
+				<div class="left tag-right">
+					<div class="content_wrap">
+						<div class="zTreeDemoBackground left">
+							<ul id="media-tree1" class="ztree"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="w">
+						<div class="list-con clearfix">
+							<div class="box clearfix">
+								<i id="showList" class="i1"></i>&nbsp;<i id="showPic" class="i22"></i>&nbsp;
+								<label>时间：</label><input type="text" class="time Wdate" onclick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd'})" id="media-time" />
+								<label>大小：</label><input type="text" class="size" id="media-smallSize" /><span>&nbsp;-&nbsp;</span><input type="text" class="size" id="media-largeSize" /> &nbsp;&nbsp;
+								<input type="text" class="importantwords" placeholder="关键字" id="media-importantwords" /><s class="search" id="media-search"></s>
+							</div>
+						</div>
+					</div>
+					<div class="list" id="media-list">
+						<div class="content1" style="display: none;">
+							<div class="header">
+								<span></span><span>名称</span><span>日期</span><span>大小</span>
+							</div>
+							<div class="main" id="mediaPicContainer">
+								<!--<div class="item">
+                                    <span><input type="checkbox"/></span><span>陈毅，1901年生，字仲弘 </span><span>11111</span><span>11111</span>
+                                </div>-->
+							</div>
+						</div>
+						<div class="content2" style="display: block;">
+							<div class="main" id="mediaPicContainer2">
+								<!--<div class="item">
+                                    <img src="image/cpt1.jpg" />
+                                    <span class="mask"></span>
+                                    <s></s>
+                                </div>-->
+							</div>
+						</div>
+						<div id="media-pageParent">
+							<div id="mediaPage"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button">
+				<div class="sure">确定</div>
+				<div class="cancel">取消</div>
+			</div>
+		</div>
+		<!--错误提示-->
+		<div class="errorTip" id="errorTip">
+			<div class="content"></div>
+			<span>确定</span>
+		</div>
+		<div class="shade" id="shade"></div>
+		<!--错误提示-->
+		<!-- 确认框 -->
+		<div class="confirmFrame">
+				<div class="cancel clearfix"><span>&#10006;</span></div>
+				<div class="content"></div>
+			<span class="no-sure">否</span>
+			<span class="sure">是</span>
+		</div>
+		<!-- 确认框遮罩层 -->
+		<div class="confirmMask"></div>
+		<!-- 警告提示 -->
+		<script src="js/errorTip.js"></script>
+		<!-- 判断选择 -->
+		<script src="js/confirmFrame.js"></script>
+		<script src="js/ztree/jquery.ztree.core.min.js"></script>
+		<script src="js/ztree/jquery.ztree.excheck.min.js"></script>
+		<script src="js/ztree/jquery.ztree.exedit.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/My97DatePicker/WdatePicker.js"></script>
+		<script src="js/initPage.js"></script>
+		<script src="js/media-box1.js"></script>
+		<!-- 音频模块 -->
+		<script src="js/audioplayer.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,975 @@
+.active-bg {
+  color: #fad5a1;
+  background: url(../img/right.png) no-repeat 125px center, #fafafa;
+}
+.current {
+  background-color: #03a9f4;
+  color: #FFFFFF;
+}
+.nav-top {
+  position: fixed;
+  top: 90px;
+  background: #fff;
+  z-index: 1;
+  padding-top: 10px;
+}
+button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 26px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+#r-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+#r-content .top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #efefef;
+}
+#r-content .top .top-title {
+  float: left;
+  padding-left: 38px;
+  line-height: 24px;
+  font-size: 18px;
+  height: 24px;
+}
+#r-content .top .moredo {
+  float: left;
+  margin-left: 2%;
+  position: relative;
+}
+#r-content .top .moredo .dt {
+  cursor: pointer;
+  color: #fff;
+  width: 118px;
+  height: 38px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 38px;
+  background-color: #f7b547;
+}
+#r-content .top .moredo .dd {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  color: #a7a7a7;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #a6a6a6;
+  padding: 10px 0;
+}
+#r-content .top .moredo .dd > div {
+  box-sizing: border-box;
+  width: 150px;
+  padding-left: 25px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+#r-content .top .moredo .dd > div:hover {
+  color: #f7b547;
+}
+#r-content .top .moredo .dd > div span {
+  margin-left: 80px;
+  font-family: "宋体";
+}
+#r-content .top .moredo .son6 > .son {
+  color: #a7a7a7;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #a6a6a6;
+  position: absolute;
+  box-sizing: border-box;
+  width: 150px;
+  padding-left: 25px;
+  line-height: 30px;
+  cursor: pointer;
+  display: none;
+  left: 145px;
+  top: 0;
+}
+#r-content .top .moredo .list {
+  width: 125px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: #757575;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #a6a6a6;
+  padding: 10px 0;
+  padding-left: 15px;
+  text-align: left;
+}
+#r-content .top .moredo .list .list-item {
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+#r-content .top .moredo .list .list-item:hover {
+  color: #f7b547;
+}
+#r-content .top .filter {
+  float: left;
+  margin-left: 2%;
+}
+#r-content .top .filter .sel-name {
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
+}
+#r-content .top .filter .filter-way {
+  display: inline-block;
+  vertical-align: middle;
+}
+#r-content .top .filter .filter-way span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+#r-content .top .toptime {
+  float: left;
+  margin-left: 2%;
+}
+#r-content .top .toptime .time {
+  width: 150px;
+  height: 22px;
+  padding-left: 5px;
+}
+#r-content .top .toptime label {
+  display: inline-block;
+  font-size: 16px;
+  height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
+}
+#r-content .top .top-right {
+  float: right;
+  right: 36px;
+  top: 0;
+}
+#r-content .top .top-right .sel-lang {
+  display: inline-block;
+  position: relative;
+}
+#r-content .top .top-right .sel-lang .sel-dt {
+  cursor: pointer;
+  color: #fff;
+  width: 118px;
+  height: 38px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 38px;
+  background: #03a9f4 url(../img/s-arrow.png) 103px 23px no-repeat;
+}
+#r-content .top .top-right .sel-lang .sel-dd {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  color: #a6a6a6;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #a6a6a6;
+  padding: 10px 0;
+  z-index: 2;
+}
+#r-content .top .top-right .sel-lang .sel-dd li {
+  box-sizing: border-box;
+  width: 150px;
+  padding-left: 25px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+#r-content .top .top-right .search {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+}
+#r-content .top .top-right .search s {
+  cursor: pointer;
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/search.png);
+}
+#r-content .top .top-right .search input {
+  cursor: pointer;
+  color: #fff;
+  width: 160px;
+  padding-left: 5px;
+  height: 38px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 38px;
+  background-color: #03a9f4;
+  text-align: left;
+  vertical-align: baseline;
+  border: none;
+}
+#r-content .top .top-right .search input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+#r-content .top .top-right .search input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+#r-content .top .top-right .search input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+#r-content .top .top-right .search input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+#r-content .top .top-right .built {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  width: 80px;
+  padding-left: 40px;
+  height: 38px;
+  border-radius: 5px;
+  line-height: 38px;
+  background-color: #03a9f4;
+  text-align: left;
+  position: relative;
+  margin-left: 20px;
+}
+#r-content .top .top-right .built s {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/built.png);
+}
+#r-content .top .top-right .saveset {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  width: 120px;
+  border-radius: 5px;
+  text-align: center;
+  height: 38px;
+  margin-left: 20px;
+  line-height: 38px;
+  background-color: #03a9f4;
+}
+/*筛选start*/
+.filter-way1 {
+  background: url(../img/manage-icon1.png);
+}
+.filter-way2 {
+  background: url(../img/manage-icon2.png);
+}
+.filter-way3 {
+  background: url(../img/manage-icon3.png);
+}
+.filter-way4 {
+  background: url(../img/manage-icon4.png);
+}
+.filter-way11 {
+  background: url(../img/manage-icon11.png);
+}
+.filter-way22 {
+  background: url(../img/manage-icon22.png);
+}
+.filter-way33 {
+  background: url(../img/manage-icon33.png);
+}
+.filter-way44 {
+  background: url(../img/manage-icon44.png);
+}
+/*筛选end*/
+.footer {
+  margin-top: 80px;
+}
+.footer table {
+  table-layout: fixed;
+  width: 100%;
+}
+.footer table thead,
+.footer table tbody {
+  background-color: #fafafa;
+  color: #42b5f5;
+}
+.footer table thead td,
+.footer table tbody td {
+  height: 50px;
+  line-height: 50px;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+  /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  padding-left: 1%;
+}
+.footer table tbody {
+  background-color: #fff;
+  color: #757575;
+}
+.footer table tfoot td {
+  width: 100%;
+}
+.footer table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.footer table tbody tr:nth-child(even) {
+  background-color: #f8f5f0;
+}
+.footer .manage-register-table td:nth-child(1) {
+  width: 5%;
+}
+.footer .manage-register-table td:nth-child(2) {
+  width: 10%;
+}
+.footer .manage-register-table td:nth-child(3) {
+  width: 15%;
+}
+.footer .manage-register-table td:nth-child(4) {
+  width: 15%;
+}
+.footer .manage-register-table td:nth-child(5) {
+  width: 15%;
+}
+.footer .manage-register-table td:nth-child(6) {
+  width: 10%;
+}
+.footer .manage-register-table td:nth-child(7) {
+  width: 15%;
+}
+.footer .manage-register-table td:nth-child(7) select {
+  height: 20px;
+  width: 80px;
+  border-radius: 5px;
+  color: #757575;
+}
+.footer .manage-register-table td:nth-child(8) {
+  width: 15%;
+}
+.footer .manage-register-table td:nth-child(8) s {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8%;
+  cursor: pointer;
+}
+.footer .manage-comment-table td:nth-child(1) {
+  width: 5%;
+}
+.footer .manage-comment-table td:nth-child(2) {
+  width: 10%;
+}
+.footer .manage-comment-table td:nth-child(3) {
+  width: 20%;
+}
+.footer .manage-comment-table td:nth-child(4) {
+  width: 10%;
+}
+.footer .manage-comment-table td:nth-child(5) {
+  width: 35%;
+}
+.footer .manage-comment-table td:nth-child(6) {
+  width: 20%;
+}
+.footer .manage-manage-table td:nth-child(1) {
+  width: 5%;
+}
+.footer .manage-manage-table td:nth-child(2) {
+  width: 15%;
+}
+.footer .manage-manage-table td:nth-child(3) {
+  width: 15%;
+}
+.footer .manage-manage-table td:nth-child(4) {
+  width: 15%;
+}
+.footer .manage-manage-table td:nth-child(5) {
+  width: 20%;
+}
+.footer .manage-manage-table td:nth-child(6) {
+  width: 15%;
+}
+.footer .manage-manage-table td:nth-child(6) select {
+  height: 20px;
+  width: 80px;
+  border-radius: 5px;
+  color: #757575;
+}
+.footer .manage-manage-table td:nth-child(7) {
+  width: 15%;
+}
+.footer .manage-manage-table td:nth-child(7) s {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8%;
+  cursor: pointer;
+}
+.icon1 {
+  background: url(../img/manage-start.png);
+}
+.icon2 {
+  background: url(../img/manage-comment.png);
+}
+.icon3 {
+  background: url(../img/manage-del.png);
+}
+.icon4 {
+  background: url(../img/manage-edit.png);
+}
+.icon11 {
+  background: url(../img/manage-end.png);
+}
+.icon22 {
+  background: url(../img/manage-comment1.png);
+}
+/*创建管理员start*/
+.builtManager {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  box-shadow: 0px 0px 10px #a6a6a6;
+  padding-bottom: 110px;
+  height: auto;
+  background-color: #FEFEFE;
+  display: block;
+  z-index: 1000;
+}
+.builtManager h1 {
+  font-size: 18px;
+  height: 90px;
+  line-height: 90px;
+  padding-left: 3%;
+}
+.builtManager input {
+  padding-left: 5px;
+  width: 75%;
+}
+.builtManager label {
+  padding-right: 1%;
+  display: inline-block;
+  width: 12%;
+  text-align: right;
+  color: #757575;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.builtManager label span {
+  color: #ff0000;
+}
+.builtManager .list > div {
+  margin-top: 20px;
+}
+.builtManager .find-power ul {
+  width: 75.6%;
+}
+.builtManager .find-power ul li {
+  width: 12.5%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #d8d8d8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.builtManager .find-power ul li:nth-child(8) {
+  border: none;
+}
+.builtManager .form-box {
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #757575;
+}
+.builtManager .builtManagerBtn {
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  margin-left: -125px;
+  height: 70px;
+}
+.builtManager .builtManagerBtn > div {
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  line-height: 36px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.builtManager .builtManagerBtn .builtManagerSure {
+  float: left;
+  background-color: #03a9f4;
+}
+.builtManager .builtManagerBtn .builtManagerCancel {
+  float: right;
+  background-color: #d8d8d8;
+}
+/*创建管理员end*/
+.stystem {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.stystem .commpany-name {
+  width: 94%;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: 160px;
+  margin-top: 40px;
+}
+.stystem .commpany-name legend {
+  margin-left: 40px;
+  font-size: 18px;
+}
+.stystem .commpany-name .companyName {
+  width: 21%;
+  border: 1px solid #e5e5e5;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-left: 1%;
+}
+.stystem .commpany-name .box {
+  margin-top: 44px;
+}
+.stystem .commpany-name label {
+  margin-left: 4%;
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+}
+.stystem .pic > fieldset {
+  width: 45%;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 300px;
+  float: left;
+  margin-left: 3%;
+}
+.stystem .pic > fieldset legend {
+  margin-left: 40px;
+  font-size: 18px;
+}
+.stystem .pic > fieldset .img-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 220px;
+  line-height: 50px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 2%;
+  float: left;
+}
+.stystem .pic > fieldset .img-box img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.stystem .pic > fieldset .img-box input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.stystem .commpany-code .img-box {
+  width: 200px !important;
+  height: 200px !important;
+}
+.stystem .commpany-code .codeBtn {
+  display: inline-block;
+  margin-top: 190px;
+  margin-left: 10px;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  background-color: #03a9f4;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  opacity: .8;
+  cursor: pointer;
+}
+.stystem .lang {
+  margin-top: 30px;
+  margin-left: 3%;
+}
+.stystem .lang label {
+  font-size: 18px;
+  height: 48px;
+  line-height: 48px;
+}
+.stystem .lang #langSetTable {
+  background: #fff;
+  width: 600px;
+}
+.stystem .lang #langSetTable thead,
+.stystem .lang #langSetTable tbody,
+.stystem .lang #langSetTable tfoot {
+  background: none;
+}
+.stystem .lang #langSetTable thead td,
+.stystem .lang #langSetTable tbody td,
+.stystem .lang #langSetTable tfoot td {
+  height: 30px;
+  line-height: 30px;
+}
+.stystem .lang #langSetTable .del {
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/del.png) no-repeat;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.stystem .lang .content {
+  margin-top: 20px;
+}
+.stystem .lang .content span {
+  color: #666;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.stystem .lang .content .addLang {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.stystem .lang .content input,
+.stystem .lang .content select {
+  width: 200px;
+  height: 30px;
+  margin-left: 10px;
+}
+.stystem .lang .content .secondInput {
+  width: 70px;
+}
+.stystem .rule {
+  margin-left: 3%;
+}
+.stystem .rule h2 {
+  margin: 40px 0 20px;
+  font-size: 18px;
+  color: #323232;
+}
+.stystem .rule label {
+  color: #757575;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.stystem .rule input {
+  margin-left: 3%;
+}
+.stystem .report {
+  margin: 20px 0 20px 3%;
+  position: relative;
+  height: auto;
+}
+.stystem .report > h2 {
+  font-size: 18px;
+  color: #323232;
+  display: inline-block;
+  vertical-align: middle;
+}
+.stystem .report > span {
+  display: inline-block;
+  vertical-align: middle;
+  background: #03a9f4;
+  color: #fff;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.stystem .report .tipbox:before,
+.stystem .report .tipbox:after {
+  content: "";
+  position: absolute;
+  border-style: dashed dashed solid dashed;
+  line-height: 1;
+  display: inline-block;
+}
+.stystem .report .tipbox:after {
+  left: 75px;
+  border-color: transparent transparent #D7DADB;
+  border-width: 11px;
+  top: -22px;
+  z-index: 1080;
+}
+.stystem .report .tipbox:before {
+  left: 76px;
+  border-color: transparent transparent #FFF;
+  border-width: 10px;
+  top: -19px;
+  z-index: 1081;
+}
+.stystem .report .tipbox {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  font-size: 16px;
+  color: #333333;
+  background-color: #FFF;
+  border: 1px solid #D7DADB;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border-radius: 2px;
+  z-index: 1;
+}
+.stystem .report .tipbox > div {
+  margin-top: 25px;
+}
+.stystem .report .tipbox label {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.stystem .report .tipbox input {
+  width: 150px;
+  height: 16px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.stystem .report .tipbox .sure {
+  display: inline-block;
+  background: #0E3245;
+  color: #fff;
+  width: 66px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.stystem .report .tipbox .cancel {
+  display: inline-block;
+  color: #0E3245;
+  width: 66px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #0E3245;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.stystem .report .show-detail {
+  margin-top: 10px;
+}
+.stystem .report .show-detail .item {
+  height: 25px;
+  line-height: 25px;
+}
+.stystem .report .show-detail .del {
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/del.png) no-repeat;
+  cursor: pointer;
+}
+.stystem .registerPersonSet {
+  margin: 20px 0 20px 3%;
+  position: relative;
+  height: auto;
+}
+.stystem .registerPersonSet > h2 {
+  font-size: 18px;
+  color: #323232;
+  display: inline-block;
+  vertical-align: middle;
+}
+.stystem .registerPersonSet > span {
+  display: inline-block;
+  vertical-align: middle;
+  background: #03a9f4;
+  color: #fff;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.stystem .registerPersonSet .box-level {
+  width: 600px;
+  margin-top: 10px;
+}
+.stystem .registerPersonSet .box-level table thead,
+.stystem .registerPersonSet .box-level table tbody,
+.stystem .registerPersonSet .box-level table tfoot {
+  background: none;
+}
+.stystem .registerPersonSet .box-level table thead td,
+.stystem .registerPersonSet .box-level table tbody td,
+.stystem .registerPersonSet .box-level table tfoot td {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 1%;
+}
+.stystem .registerPersonSet .box-level table thead td input,
+.stystem .registerPersonSet .box-level table tbody td input,
+.stystem .registerPersonSet .box-level table tfoot td input {
+  width: 126px;
+  padding-left: 5px;
+}
+.stystem .registerPersonSet .box-level table thead td .del,
+.stystem .registerPersonSet .box-level table tbody td .del,
+.stystem .registerPersonSet .box-level table tfoot td .del {
+  margin-left: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/del.png) no-repeat;
+  cursor: pointer;
+}
+.stystem .thirdPart {
+  margin: 20px 0 20px 3%;
+  position: relative;
+  height: auto;
+}
+.stystem .thirdPart > h2 {
+  font-size: 18px;
+  color: #323232;
+  display: inline-block;
+  vertical-align: middle;
+}
+.stystem .thirdPart .select-third-part {
+  margin-top: 10px;
+}
+.stystem .thirdPart .select-third-part .instroduce,
+.stystem .thirdPart .select-third-part .idOrsecret,
+.stystem .thirdPart .select-third-part .systemUrl {
+  margin-left: 20px;
+}
+.stystem .thirdPart .select-third-part h3 {
+  height: 35px;
+  line-height: 35px;
+}
+.stystem .thirdPart .select-third-part label {
+  display: inline-block;
+  width: 120px;
+}
+.stystem .thirdPart .select-third-part .instroduce {
+  height: 25px;
+}
+.stystem .thirdPart .select-third-part .instroduce a {
+  color: #03a9f4;
+}
+.stystem .thirdPart .select-third-part .idOrsecret > div {
+  height: 30px;
+}
+.stystem .thirdPart .select-third-part .idOrsecret > div label,
+.stystem .thirdPart .select-third-part .idOrsecret > div input {
+  vertical-align: middle;
+}
+.stystem .thirdPart .select-third-part .systemUrl .url {
+  display: inline-block;
+}
+/*
+ * 页数按钮样式
+ */
+.page_div a {
+  min-width: 30px;
+  height: 28px;
+  border: 1px solid #dce0e0!important;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 3px;
+}
+#firstPage,
+#lastPage {
+  width: 50px;
+  color: #03a9f4;
+  border: 1px solid #03a9f4!important;
+  display: none;
+}
+#prePage,
+#nextPage {
+  width: 30px;
+  color: #9a9a9a;
+  border: 1px solid #dce0e0!important;
+}
+.page_div .current {
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  color: #FFFFFF;
+}
+.totalPages {
+  margin: 0 10px;
+}
+.totalPages,
+.totalSize {
+  display: none;
+}
+.totalPages span,
+.totalSize span {
+  color: #0073A9;
+  margin: 0 5px;
+}
+/*分页样式end*/
+/*存储空间大小*/
+.storage {
+  display: inline-block;
+  height: 24px;
+  vertical-align: middle;
+  line-height: 24px;
+  margin-left: 20px;
+  font-size: 16px;
+  float: left;
+}

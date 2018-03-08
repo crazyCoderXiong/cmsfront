@@ -1,0 +1,353 @@
+/*@charset "UTF-8";*/
+/*css 初始化 */
+/*html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+*/
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button,textarea {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol , li {
+    list-style: none;
+}
+
+/*统一组合框的默认样式*/
+/*input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "微软雅黑";
+}*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#999;
+}
+/*select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}*/
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+/*img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; 
+    color: #666;
+    background: #fff;
+    height: 100%;
+}
+html {
+	height: 100%;
+}*/
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}*/
+
+/*h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}*/
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+.active-orange {
+  color: #f9ca86 !important;
+}
+.tag-left {
+width: 700px;
+  padding-top: 15px;
+  border: 1px solid #d8d8d8;
+  height: auto;
+  margin-right: 5px;
+  background-color: #FEFEFE;
+  position: relative;
+}
+.tag-left .sel-tag {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.tag-left .sel-tag ul {
+  float: left;
+}
+.tag-left .sel-tag ul li {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #03a9f4;
+  color: #03a9f4;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.tag-left .sel-tag ul li .del {
+  width: 15px;
+  height: 16px;
+  background: url(../img/del.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -7px;
+  margin-left: -7px;
+  cursor: pointer;
+  display: none;
+}
+.del-btn {
+  width: 140px;
+  color: #fff;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f7b547;
+  margin-left: 3.5%;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.frequent {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.frequent .l {
+  width: 60%;
+  height: 32px;
+  float: left;
+}
+.frequent .l > div {
+  display: inline-block;
+}
+.frequent .l .spell {
+  color: #757575;
+}
+.frequent .l .spell span {
+  cursor: pointer;
+  margin-left: 4px;
+}
+.frequent .r {
+  width: 19%;
+  float: left;
+}
+.frequent .r .searchbox {
+  position: relative;
+}
+.frequent .r .searchbox input {
+  border: 1px solid #d8d8d8;
+  width: 100%;
+  padding-left: 5px;
+  border-radius: 5px;
+  height: 26px;
+}
+.frequent .r .searchbox s {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 4%;
+  top: 6px;
+  cursor: pointer;
+  background: url(../img/search-icon.png) no-repeat;
+}
+.frequent .r .searchbox span {
+  color: #03a9f4;
+  font-size: 14px;
+  cursor: pointer;
+}
+.frequent .r .searchbox1 input {
+  width: 70%;
+}
+.importantwords {
+/*  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;*/
+  width: 92%;
+  margin: 0 3%;
+  /*padding-top: 15px;*/
+}
+.importantwords .ztree-list ul {
+  padding: 0!important;
+  color: #9A9A9A;
+  cursor: pointer;
+  position: relative;
+  text-align: initial;
+}
+.importantwords .ztree-list ul li {
+  display: inline-block;
+}
+.importantwords .ztree-list ul li a:hover {
+  text-decoration: none;
+}
+.importantwords .ztree-list ul li a span {
+  color: #a9a9a9 !important;
+}
+.importantwords .ztree-list ul li a span:hover {
+  color: #03a9f4 !important;
+}
+/*分页样式start*/
+.page_div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: "microsoft yahei";
+  color: #666666;
+  padding-left: 2%;
+  box-sizing: border-box;
+}
+/*
+ * 页数按钮样式
+ */
+/*.page_div {
+  float: left;
+}*/
+.page_div a {
+  min-width: 30px;
+  height: 28px;
+  border: 1px solid #dce0e0!important;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 3px;
+}
+#firstPage,
+#lastPage {
+  width: 50px;
+  color: #03a9f4;
+  border: 1px solid #03a9f4!important;
+  display: none;
+}
+#prePage,
+#nextPage {
+  width: 30px;
+  color: #9a9a9a;
+  border: 1px solid #dce0e0!important;
+}
+.page_div .current {
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  color: #FFFFFF;
+}
+.totalPages {
+  margin: 0 10px;
+}
+.totalPages,
+.totalSize {
+  display: none;
+}
+.totalPages span,
+.totalSize span {
+  color: #0073A9;
+  margin: 0 5px;
+}
+/*分页样式end*/
+/*树结构目录部分start*/
+div.content_wrap {
+  width: 100%;
+  padding-left: 5%;
+}
+div.content_wrap div.left {
+  float: left;
+  /*width: 250px;*/
+}
+div.content_wrap div.right {
+  float: right;
+  width: 340px;
+}
+div.zTreeDemoBackground {
+  /*width: 250px;*/
+  height: 362px;
+  text-align: left;
+}
+/*
+ul.ztree {margin-top: 10px;border: 1px solid #617775;background: #f0f6e4;width:220px;height:360px;overflow-y:scroll;overflow-x:auto;}*/
+ul.log {
+  border: 1px solid #617775;
+  background: #f0f6e4;
+  width: 300px;
+  height: 170px;
+  overflow: hidden;
+}
+ul.log.small {
+  height: 45px;
+}
+ul.log li {
+  color: #666666;
+  list-style: none;
+  padding-left: 10px;
+}
+ul.log li.dark {
+  background-color: #E3E3E3;
+}
+/* ruler */
+div.ruler {
+  height: 20px;
+  width: 220px;
+  background-color: #f0f6e4;
+  border: 1px solid #333;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+div.ruler div.cursor {
+  height: 20px;
+  width: 30px;
+  background-color: #3C6E31;
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+  cursor: pointer;
+}
+/*树结构目录部分end*/

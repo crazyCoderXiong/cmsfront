@@ -1,0 +1,39 @@
+.confirmFrame{
+	width: 350px;
+	height: 150px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -175px;
+	background-color: #fff;
+	padding: 15px;
+	z-index: 99999;
+	display: none;
+}
+.confirmFrame .cancel{
+	margin:0;
+}
+.confirmFrame .cancel span{
+	padding: 2px 5px;
+	float: right;
+	cursor: pointer;
+}
+.confirmFrame .content{
+	height: 70px;
+}
+.confirmFrame>span{
+	float: right;
+	margin:0 10px; 
+	cursor: pointer;
+}
+.confirmMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	display: none;
+	z-index: 11000;
+}

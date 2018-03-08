@@ -1,0 +1,300 @@
+body{
+	background-image: url(../images/redbackground.jpg);
+	background-repeat: no-repeat;
+}
+header{
+	border-bottom:3px solid #dc0101;
+}
+footer{
+	border-top:1px solid #dc0101;
+	background-color:#fafafa;
+}
+
+/*----------------------------------纯文本模块开始--------------------------------------*/
+.content-bar{
+	background-color:#f8f8f8;
+	border:1px solid #bdbdbd;
+}
+@media(max-width:768px){
+	body .model .content-bar>.dropdown.horizontal .dropdown-toggle span{
+		display: inline-block;
+		float:left;
+		background-color:#fff;
+		line-height:50px;
+		margin-top:-1px;
+	}
+	body .model .content-bar>.dropdown.horizontal .dropdown-toggle span.text{
+		border-top:2px solid #dc0101;
+		padding-right:20px;
+		color:#dc0101
+	}
+	body .model .content-bar>.dropdown.horizontal .dropdown-toggle span.caret{
+		margin-left:-9px;
+		margin-top:25px;
+	}
+	body .model .content-bar>.dropdown.horizontal .dropdown-menu>li{
+		line-height:36px;
+		border-bottom:none;
+		border-top:none;
+	}
+	body .model .content-bar>.dropdown.horizontal .dropdown-menu>li.content-bar_click{
+		line-height:36px;
+		border-bottom:none;
+		border-top:none;
+		color:#333;
+	}
+	body .model .content-bar>.dropdown.horizontal .dropdown-menu>li:hover{
+		background-color:#ededed;
+	}
+}
+.model .content-bar>.dropdown.horizontal .dropdown-menu>li{
+	border-top:2px solid transparent;
+	border-right:1px solid transparent;
+	border-left:1px solid transparent;
+}
+.model .content-bar>.dropdown.horizontal .dropdown-menu>li{
+	border-top:2px solid transparent;
+	border-right:1px solid transparent;
+	border-left:1px solid transparent;
+	line-height:50px;
+	margin-top:-1px;
+}
+.model .content-bar>.dropdown.horizontal .dropdown-menu>li.content-bar_click{
+	color:#dc0101;
+	border-top:2px solid #dc0101;
+	border-right:1px solid #e5e5e5;
+	border-left:1px solid #e5e5e5;
+	background:#fff;
+	line-height:49px;
+}
+.model .content-bar .dropdown.open .dropdown-menu>li.content-bar_click{
+	line-height:36px;
+	margin-top:0;
+}
+.model .content-bar>.dropdown .dropdown-toggle span{
+	display: inline-block;
+	float:left;
+	background-color:#fff;
+	line-height:50px;
+	margin-top:-1px;
+}
+.model .content-bar>.dropdown .dropdown-toggle span.text{
+	border-top:2px solid #dc0101;
+	padding-right:20px;
+	color:#dc0101
+}
+.model .content-bar>.dropdown .dropdown-toggle span.caret{
+	margin-left:-9px;
+	margin-top:25px;
+}
+.tab .round li:hover i{
+	background:#dc0101;
+}
+.item a:hover{
+	color:#dc0101;
+	text-decoration: underline;
+}
+.text-title .tab .prefix-number>li:hover{
+	color:#dc0101;
+}
+.text-title .tab .prefix-number>li:hover>a{
+	color:#dc0101;
+}
+.pictureText-surround .item .title-line li:hover>a{
+	color: #dc0101;
+}
+.pictureText-surround .prefix-number .item .title-line li:hover{
+	color: #dc0101;
+}
+.item .title-line a:hover{
+	color: #dc0101;
+}
+.model .content-bar .left{
+	font-family:"微软雅黑";
+	color:#dc0101;
+	border-top:2px solid #dc0101;
+	border-right:1px solid #ededed;
+	margin-top:-1px;
+	background-color:#fff;
+}
+.text-title .text .item:hover .video{
+	background-position:-147px -41px;
+}
+.text-title .text .item:hover .book{
+	background-position:-147px -84px;
+}
+.tab .prefix-disc li a:hover i{
+	background-color:#dc0101;
+}
+.content-bar .iconLeft{
+	width:10px;
+	height:14px;
+	margin-top:18px;
+	background-position:  0 -214px;
+}
+.content-bar .iconArrow{
+	width:22px;
+	height:22px;
+	margin-top:18px;
+	background-position: -212px -42px;
+}
+body .text-titleCont .lists .item h3>a:hover>span{
+	color:#dc0101;
+}
+.text-titleCont .lists .item p:hover>a{
+	color:#dc0101;
+	text-decoration: underline;
+}
+/*--------------------------------纯文本模块结束-------------------------------------*/
+
+
+
+/*--------------------------------图文混排模块开始--------------------------------*/
+.media-body a:hover{
+	color:#dc0000;
+	text-decoration: underline;
+}
+.pic-pictures .picture:hover,.book .picture:hover{
+	border:1px solid #dc0000;
+}
+/*----------------------------图文混排模块结束-------------------------------*/
+
+
+
+/*----------------------------导航模块开始-----------------------------------*/
+/*-------------带搜索框的通行导航-----------------*/
+.nav-searchBox .search,.nav-classic .search{
+	background-color:#dc0000;
+}
+/*-----------------nav-button && nav-classic----------------------*/
+.nav-button .tab>ol li a{
+	color:#323232;
+}
+.nav-button .tab>ol>li:hover,.nav-classic .tab>ol>li:hover{
+	background:#dc0000;
+}
+.nav-button .character .vertical-nav li:hover,.nav-classic .character .vertical-nav li:hover{
+	background-color:#ededed;
+}
+
+.nav-button .character .vertical-nav li:hover a,.nav-classic .character .vertical-nav li:hover a{
+	color:#dc0000;
+	text-decoration: none;
+}
+.nav-button .tab>ol>li:hover>a,.nav-classic .tab>ol>li:hover>a{
+	color:#fff;
+	text-decoration: none;
+}
+.nav-button .tab>ol .hover_nav li:hover,.nav-classic .tab>ol .hover_nav li:hover{
+	background:#ededed;
+}
+.nav-button .tab>ol .hover_nav li:hover a,.nav-classic .tab>ol .hover_nav li:hover a{
+	color:#dc0000;
+	text-decoration: none;
+}
+
+/*--------------------nav-text------------------*/
+
+.nav-text .tab>ol li:hover a{
+	color:#dc0000;
+	text-decoration: underline;
+}
+/*-------nav-classicButton------------*/
+.nav-classicButton .lists{
+	border-bottom:1px solid #dc0000;
+}
+.nav-classicButton .lists>li:hover{
+	background-color:#dc0000;
+}
+.nav-classicButton .lists>li:hover>a{
+	color:#fff;
+	text-decoration: none;
+}
+.nav-footer .lists>li:hover>a{
+	color:#dc0000;
+	text-decoration: underline;
+}
+/*-----------------------------导航模块结束----------------------------------*/
+
+/*----视频详情页-----*/
+.detail-video .video-list li:hover>a{
+	border-color:#dc0000;
+	text-decoration:none;
+	color:#dc0000;
+}
+.detail-video .tab .item .media p:hover>a{
+	color:#dc0000!important;
+}
+.pic-slide .tab .rolling-style.thumbnailLists li:nth-child(1) img{
+	border:2px solid #dc0000;
+}
+.pic-slide .rolling-style.iconLists li:nth-child(1){
+	background-color:#dc0000;
+}
+.pic-slide .rolling-style.lineLists li:nth-child(1){
+	background-color:#dc0000;
+}
+
+/*----固定页分页----*/
+.pagination>li>a:hover{
+	background-color:#dc0000!important;
+	border:1px solid #dc0000!important;
+	color:#fff;
+}
+/*图书详情页*/
+.book-introduce .tab .lists>li:hover a{
+	color:#dc0000;
+	text-decoration: none;
+}
+.pageTurning>li:hover{
+	color:#dc0000;
+	text-decoration: none;
+}
+/*侧栏模块*/
+.model.sidebar.hasBg .lists .item .text{
+	background-color:rgb(200,22,35);
+}
+body .model.sidebar.hasBg .tab .lists .item:hover,body .model.sidebar.hasBg .tab .lists .item.contact-us li:hover{
+	border-radius:0;
+	background-color:rgb(200,22,35);
+}
+/*新增导航模块*/
+.model.newNav .tab .lists .item:hover>a{
+	color:#dc0000;
+	text-decoration:none;
+}
+.model.newNav .tab .lists .second-nav li:hover>a,.model.newNav .tab .lists .second-nav-vertical li:hover>a{
+	text-decoration:none;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover{
+	background-color:#dc0000;
+}
+.model.newNav .tab .lists .item.hasSecondNav:hover>a{
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

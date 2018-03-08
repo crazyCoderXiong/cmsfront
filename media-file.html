@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>媒资中心-附件</title>
+		<link rel="stylesheet" href="css/errorTip.css" />
+		<link rel="stylesheet" type="text/css" href="css/tooltip.css"/>
+		<link rel="stylesheet" href="css/zTreeStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/media.css" />
+		<link rel="stylesheet" href="css/loaders.min.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/loaders.css.js"></script>
+		
+	</head>
+
+	<body>
+		<div id="common">
+			<div id="container">
+				<!--头部-->
+				<div id="header" class="clearfix">
+					<div class="logo"></div>
+					<div class="login">
+						<div id="companyFullName"></div>
+						<div class="icon2" id="admin">
+							<div class="list" style="display: none;">
+								<div class="list-item" id="modefiyPassword">修改密码</div>
+								<div class="list-item list-item3" id="backLogin">退出</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--主体-->
+				<div id="main" class="clearfix">
+					<div class="left">
+						<ul id="nav-ul">
+							<li id="web" data-id="web">
+								<div class="header">网页设计<span class="arrow-icon"></span></div>
+								<div class="content aibws-content" style="display: none;">
+									<div class="modelBox">
+										<ul class="dropdown-module setLayout">
+											<li class="slide-toggle active"><s></s>布局设置<i></i></li>
+											<li class="module-menu">
+												<div class="row-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">1栏</span>
+													<div class="view">
+														<div class="row">
+															<div class="column col-md-12"></div>
+														</div>
+													</div>
+												</div>
+												<div class="row-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">6:6栏</span>
+													<div class="view">
+														<div class="row">
+															<div class="column col-md-6"></div>
+															<div class="column col-md-6"></div>
+														</div>
+													</div>
+												</div>
+												<div class="row-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">4:4:4分栏</span>
+													<div class="view">
+														<div class="row">
+															<div class="column col-md-4"></div>
+															<div class="column col-md-4"></div>
+															<div class="column col-md-4"></div>
+														</div>
+													</div>
+												</div>
+												<div class="custom">
+													<input type="text" placeholder="自定义布局比例" />
+												</div>
+											</li>
+										</ul>
+										<ul class="dropdown-module textList-module">
+											<li class="slide-toggle"><s></s>纯文字列表模块<i></i></li>
+											<li class="module-menu">
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">纯标题</span>
+													<div class="view">
+														<ul class="model text-title">
+															<li class="content-bar title clearfix">
+																<ul class="clearfix pull-left">
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="tab active clearfix"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">标题内容</span>
+													<div class="view">
+														<ul class="model text-titleCont">
+															<li class="content-bar title">
+																<ul>
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="li tab active clearfix"></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<ul class="dropdown-module image-module">
+											<li class="slide-toggle"><s></s>纯图片显示模块<i></i></li>
+											<li class="module-menu">
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">幻灯片</span>
+													<div class="view">
+														<ul class="model pic-slide">
+															<li class="tab active full no-action" style="height:334px;">
+																<div class="item">
+																	<ul class="pictureSlide">
+																		<li class="picture" data-number="1" style="height:334px;">
+																			<a href="javascript:;"><img src="images/air_03.jpg" alt="南海西沙风景如此美丽" class="jqthumb"></a>
+																			<div class="mod">
+																				<h3><a href="javascript:;" title="南海西沙风景如此美丽">南海西沙风景如此美丽</a></h3>
+																			</div>
+																		</li>
+																	</ul>
+																	<ul class="arrows">
+																		<li class="left-arrow"> &lt; </li>
+																		<li class="right-arrow"> &gt; </li>
+																	</ul>
+																	<ul class="rolling-style iconLists">
+																		<li data-number="1"></li>
+																	</ul>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">多图</span>
+													<div class="view">
+														<ul class="model pic-pictures">
+															<li class="title content-bar clearfix">
+																<ul class="clearfix">
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="tab clearfix active full no-action"></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<ul class="dropdown-module picTet-module">
+											<li class="slide-toggle"><s></s>图文混合模块<i></i></li>
+											<li class="module-menu">
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">环绕</span>
+													<div class="view">
+														<ul class="model pictureText-surround">
+															<li class="title content-bar">
+																<ul>
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="tab active clearfix full no-action"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">横排</span>
+													<div class="view">
+														<ul class="model pictureText-crosswise">
+															<li class="title content-bar clearfix">
+																<ul>
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="tab active clearfix full no-action"></li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+														<span class="template-config handleLabel handle-btn config-btn"></span>
+														<div class="template-config-box config-box">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>模板配置</span>
+															</div>
+															<form class="tabs-display">
+																<span>选项卡设置:</span>
+																<label class="checked"><input type="radio" name="tabs-display" value="block"/>显示选项卡</label>
+																<label><input type="radio" name="tabs-display" value="none"/>不显示选项卡</label>
+															</form>
+															<form class="tabs-style">
+																<span>选项卡样式:</span>
+																<label class="checked"><input type="radio" name="tabs-style" value="horizontal"/>横排</label>
+																<label><input type="radio" name="tabs-position" value="dropdown"/>下拉菜单</label>
+															</form>
+															<form class="more-style">
+																<span>&#12288;更多样式:</span>
+																<label class="checked"><input type="radio" name="more-style" value="more-text"/>更多</label>
+																<label><input type="radio" name="more-style" value="iconLeft"/>&gt;</label>
+																<label><input type="radio" name="more-style" value="iconArrow"/><i></i></label>
+															</form>
+														</div>
+													</div>
+													<span class="draggable-title">竖排</span>
+													<div class="view">
+														<ul class="model pictureText-vertical">
+															<li class="title content-bar">
+																<ul>
+																	<li class="content-bar_click" data-url=""><span>添加页签名</span></li>
+																</ul>
+																<i class="handleLabel"></i>
+																<a href="javascript:;"><i class="more-text">更多&gt;</i></a>
+															</li>
+															<li class="tab active clearfix full no-action"></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<ul class="dropdown-module navbar-module">
+											<li class="slide-toggle"><s></s>导航条模块<i></i></li>
+											<li class="module-menu">
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">企业经典导航条</span>
+													<div class="view">
+														<ul class="model nav-classic">
+															<li class="tab tab-nav clearfix active">
+																<ol class="lists clearfix pull-left">
+																	<i class="handleLabel"></i>
+																	<li class="item">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																</ol>
+																<form class="clearfix pull-left">
+																	<input placeholder="搜索..." type="text">
+																	<div class="search"></div>
+																</form>
+																<ol class="lists pull-right clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<span class="content-config handleLabel config-btn"></span>
+														<div class="config-box content-config-box" style="display: none;">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>样式配置</span>
+															</div>
+															<form class="item-row">
+																<span>行数:</span>
+																<label>
+                                        <input type="text" value="1">
+                                        <span>1-3行(默认1行)</span>
+                                    </label>
+															</form>
+															<form class="alignment">
+																<span>对齐方式:</span>
+																<label class="">
+                                        <input type="radio" name="alignment" value="text-left">
+                                        <i class="glyphicon glyphicon-align-left"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-center">
+                                        <i class="glyphicon glyphicon-align-center"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-right">
+                                        <i class="glyphicon glyphicon-align-right"></i>
+                                    </label>
+																<label class="checked">
+                                        <input type="radio" name="alignment" value="full">
+                                        <span>充满</span>
+                                    </label>
+															</form>
+														</div>
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">按钮导航条</span>
+													<div class="view">
+														<ul class="model nav-button">
+															<li class="tab tab-nav active clearfix full">
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<span class="content-config handleLabel config-btn"></span>
+														<div class="config-box content-config-box" style="display: none;">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>样式配置</span>
+															</div>
+															<form class="item-row">
+																<span>行数:</span>
+																<label>
+                                        <input type="text" value="1">
+                                        <span>1-3行(默认1行)</span>
+                                    </label>
+															</form>
+															<form class="alignment">
+																<span>对齐方式:</span>
+																<label class="">
+                                        <input type="radio" name="alignment" value="text-left">
+                                        <i class="glyphicon glyphicon-align-left"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-center">
+                                        <i class="glyphicon glyphicon-align-center"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-right">
+                                        <i class="glyphicon glyphicon-align-right"></i>
+                                    </label>
+																<label class="checked">
+                                        <input type="radio" name="alignment" value="full">
+                                        <span>充满</span>
+                                    </label>
+															</form>
+														</div>
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">经典按钮导航条</span>
+													<div class="view">
+														<ul class="model nav-classicButton">
+															<li class="tab active tab-nav clearfix full">
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:12.5%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<span class="content-config handleLabel config-btn"></span>
+														<div class="config-box content-config-box" style="display: none;">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>样式配置</span>
+															</div>
+															<form class="item-row">
+																<span>行数:</span>
+																<label>
+                                        <input type="text" value="1">
+                                        <span>1-3行(默认1行)</span>
+                                    </label>
+															</form>
+															<form class="alignment">
+																<span>对齐方式:</span>
+																<label class="">
+                                        <input type="radio" name="alignment" value="text-left">
+                                        <i class="glyphicon glyphicon-align-left"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-center">
+                                        <i class="glyphicon glyphicon-align-center"></i>
+                                    </label>
+																<label>
+                                        <input type="radio" name="alignment" value="text-right">
+                                        <i class="glyphicon glyphicon-align-right"></i>
+                                    </label>
+																<label class="checked">
+                                        <input type="radio" name="alignment" value="full">
+                                        <span>充满</span>
+                                    </label>
+															</form>
+														</div>
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">纯文字导航条</span>
+													<div class="view">
+														<ul class="model nav-text">
+															<li class="tab tab-nav active clearfix full">
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item" style="width:33.3%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:33.3%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																	<li class="item" style="width:33.3%;">
+																		<a href="javascript:;">添加页签名</a>
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">搜索导航条</span>
+													<div class="view">
+														<ul class="model nav-searchBox">
+															<li class="tab tab-nav clearfix active">
+																<form>
+																	<input type="text" placeholder="搜索..">
+																	<div class="search"></div>
+																</form>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<span class="content-config handleLabel config-btn"></span>
+														<div class="config-box content-config-box" style="display: none;">
+															<em>&#9670;</em>
+															<span>&#9670;</span>
+															<div class="box-top">
+																<span>样式配置</span>
+															</div>
+															<form class="item-row">
+																<span>行数:</span>
+																<label>
+                                        <input type="text" value="3">
+                                        <span>3-6行(默认3行)</span>
+                                    </label>
+															</form>
+														</div>
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">页脚导航条</span>
+													<div class="view">
+														<ul class="model nav-footer">
+															<li class="tab tab-nav active clearfix text-center">
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																</ol>
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																</ol>
+																<ol class="lists clearfix">
+																	<i class="handleLabel"></i>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																	<li class="item">
+																		<a href="javascript:;">添加内容</a>
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col-draggable ui-draggable">
+													<div class="pull-right template-handle">
+														<div class="delete handle-btn">
+															<a href="#delete" class="delete-btn handleLabel"></a>
+															<div class="prompt">删除</div>
+														</div>
+														<span class="drag handleLabel handle-btn"></span>
+													</div>
+													<span class="draggable-title">访客记录模块</span>
+													<div class="view">
+														<ul class="model nav-visitcount">
+															<li class="tab active tab-nav text-center clearfix">
+																<ol class="lists clearfix">
+																	<li class="item">
+																		您是第
+																		<span class="red">
+                                                <span id="visit-count">n</span>
+																		</span>
+																		位访客
+																	</li>
+																</ol>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li data-id="tag">
+								<div class="header">分类标签</div>
+							</li>
+							<li data-id="contentInput" id="contentInput">
+								<div class="header">内容录入<span class="arrow-icon"></span></div>
+								<div class="content" style="display: none;">
+									<div id="article">文章</div>
+									<div id="gallery">画廊</div>
+									<div id="vedio">视频</div>
+									<div id="music">音乐</div>
+									<div id="topic">专题</div>
+									<div id="bookessay">图书杂志</div>
+									<div id="playreport">直播频道</div>
+								</div>
+							</li>
+							<li id="media-center" data-id="media">
+								<div class="header">媒资中心<span class="click-arrow-icon"></span></div>
+								<div class="content" style="display: block;">
+									<div id="media-pic">图片</div>
+									<div id="media-video">视频</div>
+									<div id="media-music">音乐</div>
+									<div id="media-file">附件</div>
+								</div>
+							</li>
+							<li id="maneger-center" data-id="management">
+								<div class="header">管理中心<span class="arrow-icon"></span></div>
+								<div class="content" style="display: none;">
+									<div id="manage-user">注册用户管理</div>
+									<div id="manage-comment">评论管理</div>
+									<div id="manage-manager">管理员管理</div>
+									<div id="manage-system">系统设置</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<div class="right">
+						<!--媒资中心图片-->
+						<div id="r-content" style="display: block;">
+							<div class="top clearfix nav-top">
+								<div class="top-title" style="background: url(../img/media-pic.png) no-repeat;">
+									媒资中心-附件
+								</div>
+								<div id="storage" class="storage">
+									<span>附件总存储空间大小：</span>
+									<s>110</s>
+								</div>
+							</div>
+							<div class="bottom clearfix">
+								<div class="left tag-right" style="height: 200px;">
+									<div class="content_wrap">
+										<div class="zTreeDemoBackground left">
+											<ul id="tree1" class="ztree"></ul>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="w">
+										<div class="list-con clearfix">
+											<div class="box clearfix">
+												<i id="showList" class="i1" style="display: none;"></i>&nbsp;<i id="showPic" class="i22" style="display: none;"></i>&nbsp;
+												<label>时间：</label><input type="text" class="time Wdate" onclick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd'})" id="time" />
+												<label>大小：</label><input type="text" class="size" id="smallSize" /><span>&nbsp;-&nbsp;</span><input type="text" class="size" id="largeSize" /> &nbsp;&nbsp;
+												<input type="text" class="importantwords" placeholder="关键字" id="importantwords" /><s class="search" id="search"></s>
+											</div>
+											<div class="rbtn">
+												<div class="upload"><input type="file" id="upload" value="" name="file" />单文件上传</div>
+												<div class="moredo" id="moredo">
+													<span class="dt">批量操作</span>
+													<div class="list" style="display: none;">
+														<div class="list-item" id="media-del">删除</div>
+														<div class="list-item morefile">
+															上传
+															<input type="file" name="file" id="fileMutiply" value="" multiple="multiple" />
+															
+														</div>
+														<div class="list-item list-moveto" id="moveto">
+															移动到<span class="gt">&gt;</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filelist"></div>
+									<div class="list" id="media-list">
+										<div class="content1" style="display: block;">
+											<div class="header">
+												<span><input type="checkbox" id="mediaCheckAll"/></span><span>名称</span><span>日期</span><span>大小</span><span>附件链接</span>
+											</div>
+											<div class="main" id="mediaPicContainer"></div>
+										</div>
+										<div class="content2" style="display: none;">
+											<div class="main" id="mediaPicContainer2"></div>
+										</div>
+										<div id="media-pageParent">
+											<div id="mediaPage"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ztreeBox" style="display: none;">
+			<ul id="tree2" class="ztree"></ul>
+			<div class="ztreeBtn">
+				<div class="sureBtn">确定</div>
+				<div class="cancelBtn">取消</div>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div class="mark" id="mark" style="position:fixed;top:0;left:0;bottom:0;right:0;background-color: #000;opacity: .6;display: none;z-index: 10001;"></div>
+		<div id="modifiy-psw" class="modifiy-psw" style="display: none;">
+			<h1>修改密码</h1>
+			<div class="list">
+				<div>
+					<label>请输入您的旧密码<span>*</span></label>
+					<input type="password" class="form-box" id="oldpsw">
+				</div>
+				<div>
+					<label>请输入您的新密码<span>*</span></label>
+					<input type="password" class="form-box" id="newpswone">
+				</div>
+				<div>
+					<label>请再次输入您的新密码<span>*</span></label>
+					<input type="password" class="form-box" id="newpswtwo">
+				</div>
+			</div>
+			<div id="modifyPswSubmit" class="btn btn1">提交</div>
+			<div id="modifyPswCancel" class="btn btn2">取消</div>
+		</div>
+		<div class="continueUpload" id="continueUpload">
+			<h1>有文件正在上传，该操作将中断文件上传，您确定要进行此操作？</h1>
+			<div class="btn">
+				<div class="sure">确定</div>
+				<div class="cancel">取消</div>
+			</div>
+		</div>
+		<!--错误提示-->
+		<div class="errorTip" id="errorTip">
+			<div class="content"></div>
+			<span>确定</span>
+		</div>
+		<div class="shade" id="shade"></div>
+		<!--错误提示-->
+		<script src="js/errorTip.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/ztree/jquery.ztree.core.min.js"></script>
+		<script src="js/ztree/jquery.ztree.excheck.min.js"></script>
+		<script src="js/ztree/jquery.ztree.exedit.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/My97DatePicker/WdatePicker.js"></script>
+		<script src="js/ajaxfileupload.js"></script>
+		<script src="js/initPage.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/media.js"></script>
+	</body>
+
+</html>
